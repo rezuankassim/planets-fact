@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import Button from '../components/Button'
-import Header from '../components/Header'
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <div className='font-spartan min-h-screen h-screen bg-theme-dark-blue'>
+    <Layout>
       <Head>
         <title>The Planets</title>
         <meta
@@ -13,8 +12,6 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon-32x32.png' />
       </Head>
-
-      <Header />
-    </div>
+    </Layout>
   )
 }
